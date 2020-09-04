@@ -1,0 +1,39 @@
+.product-section {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.product-list {
+  display: flex;
+
+  &-item {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.product-picture {
+  display: block;
+}
+
+.product-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: $accentTextColor;
+  text-align: center;
+  text-transform: uppercase;
+}

@@ -1,0 +1,42 @@
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-mobile-menu-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-mobile-menu-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-mobile-menu {
+  display: none;
+}
+
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  text-align: center;
+  background-color: yellow;
+}
