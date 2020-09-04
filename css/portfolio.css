@@ -519,6 +519,13 @@ html {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav,
+  .contact-nav {
+    display: none;
+  }
+}
+
 .site-nav-link.current {
   position: relative;
   color: #2196f3;
@@ -545,16 +552,24 @@ html {
   margin-left: auto;
 }
 
-.contact-nav-item:not(:last-child) {
-  margin-right: 50px;
+.contact-nav-item {
+  margin-left: 50px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-nav {
     display: block;
+    text-align: start;
     font-size: 12px;
-    margin-left: 84px;
+    margin-left: 84;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-nav-item {
+    display: block;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -587,6 +602,13 @@ html {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav,
+  .contact-nav {
+    display: none;
+  }
 }
 
 .page-header {

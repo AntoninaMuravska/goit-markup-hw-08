@@ -22,3 +22,10 @@
     color: $accentColor;
   }
 }
+
+.site-nav,
+.contact-nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

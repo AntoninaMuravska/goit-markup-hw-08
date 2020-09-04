@@ -2,15 +2,25 @@
   display: flex;
   margin-left: auto;
 
-  &-item:not(:last-child) {
-    margin-right: 50px;
+  &-item {
+    margin-left: 50px;
   }
+}
 
+.contact-nav {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: block;
+    text-align: start;
     font-size: 12px;
-    margin-left: 84px;
+    margin-left: 84;
+  }
+}
+
+.contact-nav-item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -40,4 +50,11 @@
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+}
+
+.site-nav,
+.contact-nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
