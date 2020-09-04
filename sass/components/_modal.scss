@@ -26,8 +26,15 @@
   top: 50%;
   left: 50%;
 
-  min-width: 528px;
-  min-height: 581px;
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 
   background-color: $accentTextColor;
 
@@ -169,13 +176,19 @@
 .checkbox-field {
   display: flex;
   align-items: center;
-  padding-left: 13px;
+  // padding-left: 13px;
   margin-bottom: 30px;
 
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: $primaryTextColor;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 13px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .input-checkbox {
@@ -214,15 +227,19 @@
   color: $accentColor;
 }
 
+.form-btn-thumb {
+  text-align: center;
+}
+
 .form-btn {
-  position: absolute;
+  // position: absolute;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 56px;
   padding-right: 55px;
   border-radius: 4px;
 
-  transform: translateX(124px);
+  // transform: translateX(124px);
 
   color: $accentTextColor;
   background-color: $accentColor;
