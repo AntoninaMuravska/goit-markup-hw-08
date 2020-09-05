@@ -498,11 +498,25 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 85px;
 }
 
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav .site-nav-item {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .site-nav-link {
@@ -520,10 +534,16 @@ html {
 }
 
 @media screen and (max-width: 767px) {
-  .site-nav,
-  .contact-nav {
-    display: none;
+  .site-nav-link {
+    display: inline;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.167;
   }
+}
+
+.site-nav-link.current {
+  padding-bottom: 8px;
 }
 
 .site-nav-link.current {
@@ -549,27 +569,60 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
 }
 
-.contact-nav-item {
-  margin-left: 50px;
+.contact-nav-item:not(:last-child) {
+  margin-right: 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .contact-nav {
     display: block;
-    text-align: start;
-    font-size: 12px;
-    margin-left: 84;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.167;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contact-nav-item {
+  .contact-nav {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    display: block;
+    margin-left: 84px;
+    text-align: start;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav {
+    margin-left: 305px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-nav .contact-nav-item {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-nav .contact-nav-item {
     display: block;
     margin-right: 0;
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-nav-item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -590,6 +643,12 @@ html {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .contact-nav-link {
+    display: inline;
+  }
+}
+
 .email-link-icon {
   width: 16px;
   height: 12px;
@@ -602,13 +661,6 @@ html {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
-}
-
-@media screen and (max-width: 767px) {
-  .site-nav,
-  .contact-nav {
-    display: none;
-  }
 }
 
 .page-header {

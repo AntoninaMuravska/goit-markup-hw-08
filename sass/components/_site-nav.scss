@@ -1,9 +1,21 @@
 .site-nav {
   display: flex;
-  margin-left: 85px;
 
   &-item:not(:last-child) {
     margin-right: 50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.site-nav .site-nav-item {
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -21,11 +33,16 @@
   &:focus {
     color: $accentColor;
   }
+
+  @media screen and (max-width: 767px) {
+    display: inline;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 1.167;
+  }
 }
 
-.site-nav,
-.contact-nav {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+.site-nav-link.current {
+  padding-bottom: 8px;
 }
